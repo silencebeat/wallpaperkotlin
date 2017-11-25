@@ -3,6 +3,7 @@ package com.silencebeat.wallpapersearch.Views
 import android.content.Context
 import android.support.v7.widget.RecyclerView
 import android.view.View
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import kotlinx.android.synthetic.main.item_image.view.*
@@ -20,5 +21,9 @@ class ImageViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
                 .fitCenter()
                 .dontAnimate()
                 .into(image)
+
+        rootView.setOnClickListener(View.OnClickListener {
+            Toast.makeText(context, "index "+adapterPosition+" clicked", Toast.LENGTH_SHORT).show()
+        })
     }
 }

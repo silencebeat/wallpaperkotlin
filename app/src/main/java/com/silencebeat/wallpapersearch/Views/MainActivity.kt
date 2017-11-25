@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity(), WallpaperView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setToolbar()
-
         val presenter = WallpaperPresenter(WallpaperInteractor(),this, this)
         presenter.getWallpaper()
     }

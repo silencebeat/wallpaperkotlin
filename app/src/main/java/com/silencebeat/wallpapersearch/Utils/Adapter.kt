@@ -26,7 +26,7 @@ abstract class Adapter<TipeData, ViewHolder: RecyclerView.ViewHolder>(var mLayou
     abstract protected fun bindView(holder: ViewHolder, tipeData: TipeData, position: Int)
 
     private fun getItem(position: Int): TipeData{
-        return mData.get(position)
+        return mData[position]
     }
 
     override fun getItemCount(): Int {
