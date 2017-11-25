@@ -1,7 +1,7 @@
 ## AGC Wallpaper
 Auto Generated Content wallpaper for android. 
 
-## Languange
+## Language
 - kotlin
 - xml
 
